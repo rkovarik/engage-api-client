@@ -35,7 +35,7 @@ public class SelectRecipientDataResult implements ApiResult {
     @XStreamAlias("OptedOut")
     private String optedOutDateAsString;
 
-    @XStreamImplicit(itemFieldName="COLUMNS")
+    @XStreamAlias("COLUMNS")
     private List<Column> columns;
 
     public SelectRecipientDataResult() {
