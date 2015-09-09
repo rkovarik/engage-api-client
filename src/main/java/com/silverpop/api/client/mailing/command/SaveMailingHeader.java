@@ -98,7 +98,11 @@ public class SaveMailingHeader {
 	@XStreamAlias("HasSpCrmBlock")
 	private Boolean hasSpCrmBlock;
 
-	public void setMailingId(Long mailingId) {
+    public Long getMailingId() {
+        return mailingId;
+    }
+
+    public void setMailingId(Long mailingId) {
 		this.mailingId = mailingId;
 	}
 
