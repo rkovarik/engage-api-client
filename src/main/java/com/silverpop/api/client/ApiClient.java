@@ -69,7 +69,7 @@ public abstract class ApiClient<REQUEST extends ApiRequest> {
     protected ApiResult validateSessionAndExecuteCommand(ApiCommand command, Map<String,String> requestHeaders) throws ApiResultException {
 		ensureSessionIsOpen();
 
-		REQUEST request = commandProcessor.prepareRequest(command, getSession());
+		REQUEST request = commandProcessor.prepareRequest(command);
         addAdditionalHeadersToRequest(request, requestHeaders);
 
 		HttpMethodBase method = commandProcessor.prepareMethod(getSession().getUrl(), request);
