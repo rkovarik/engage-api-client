@@ -58,7 +58,7 @@ public abstract class ApiClient<REQUEST extends ApiRequest> {
 		return errorResult.isSessionLost() && getSession().isReAuthenticate() && !(command instanceof LogoutCommand);
 	}
 
-    protected ApiResult validateSessionAndExecuteCommand(ApiCommand command, Map<String,String> requestHeaders) throws ApiResultException {
+    private ApiResult validateSessionAndExecuteCommand(ApiCommand command, Map<String,String> requestHeaders) throws ApiResultException {
 		ensureSessionIsOpen();
 
 		REQUEST request = commandProcessor.prepareRequest(command, getSession());
