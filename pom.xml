@@ -5,16 +5,16 @@
   <distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
-      <id>thirdparty</id>
-      <name>thirdparty</name>
-      <url>https://nexus.magnolia-cms.com/content/repositories/thirdparty/</url>
+      <id>magnolia.forge.releases</id>
+      <name>magnolia.forge.releases</name>
+      <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.releases</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
-      <id>thirdparty</id>
-      <name>thirdparty</name>
-      <url>https://nexus.magnolia-cms.com/content/repositories/thirdparty/</url>
+      <id>magnolia.forge.snapshots</id>
+      <name>magnolia.forge.snapshots</name>
+      <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.snapshots</url>
       <layout>default</layout>
     </snapshotRepository>
   </distributionManagement>
