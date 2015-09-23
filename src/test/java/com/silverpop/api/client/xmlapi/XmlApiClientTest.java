@@ -30,7 +30,7 @@ public class XmlApiClientTest {
         //GIVEN
         XmlApiClientFactory factory = new XmlApiClientFactory() {
             @Override
-            public XmlApiClient createClient(XmlApiSession session) {
+            public XmlApiClient createClient(ApiSession session) {
                 return client;
             }
         };
