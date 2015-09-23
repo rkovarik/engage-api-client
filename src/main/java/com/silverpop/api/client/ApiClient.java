@@ -10,8 +10,7 @@ import org.apache.commons.httpclient.MultiThreadedHttpConnectionManager;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.silverpop.api.client.command.LoginCommand;
-import com.silverpop.api.client.command.LogoutCommand;
+import com.silverpop.api.client.authentication.LogoutCommand;
 import com.silverpop.api.client.xmlapi.NoResponseApiErrorResult;
 
 public abstract class ApiClient<REQUEST extends ApiRequest> {
