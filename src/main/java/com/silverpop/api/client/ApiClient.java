@@ -70,6 +70,7 @@ public abstract class ApiClient<REQUEST extends ApiRequest> {
 
 		REQUEST request = commandProcessor.prepareRequest(command);
         addAdditionalHeadersToRequest(request, requestHeaders);
+        addAdditionalHeadersToRequest(request, getSession().getDefaultHeaders());
 
 		HttpMethodBase method = commandProcessor.prepareMethod(getSession().getUrl(), request);
 		String in = executeMethod(method);
