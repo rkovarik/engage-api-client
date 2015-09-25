@@ -31,6 +31,8 @@ public class AddRecipientCommand implements ApiCommand {
     @XStreamImplicit(itemFieldName="COLUMN")
     private List<Column> columns;
 
+    @XStreamAlias("VISITOR_KEY")
+    private String visitorKey;
 
     public AddRecipientCommand () {
         columns = new ArrayList<Column>();
@@ -87,5 +89,13 @@ public class AddRecipientCommand implements ApiCommand {
 
     public void addColumn(final Column column) {
         this.columns.add(column);
+    }
+
+    public String getVisitorKey() {
+        return visitorKey;
+    }
+
+    public void setVisitorKey(String visitorKey) {
+        this.visitorKey = visitorKey;
     }
 }
