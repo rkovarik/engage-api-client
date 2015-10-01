@@ -5,7 +5,7 @@
     <url>https://github.com/rkovarik/engage-api-client</url>
     <connection>scm:git:git://github.com/rkovarik/engage-api-client.git</connection>
     <developerConnection>scm:git:git@github.com:rkovarik/engage-api-client.git</developerConnection>
-    <tag>spapi-client-1.0-magnolia</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
@@ -60,7 +60,7 @@
   <groupId>silverpop</groupId>
   <artifactId>spapi-client</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-magnolia</version>
+  <version>1.0.1-magnolia-SNAPSHOT</version>
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
