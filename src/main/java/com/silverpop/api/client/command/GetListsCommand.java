@@ -33,6 +33,16 @@ public class GetListsCommand implements ApiCommand {
 		return listType;
 	}
 
+    /**
+     * @param listType
+     * 0 – Databases
+     * 1 – Queries
+     * 2 – Databases, Contact Lists and Queries 5 – Test Lists
+     * 6 – Seed Lists
+     * 13 – Suppression Lists
+     * 15 – Relational Tables
+     * 18 – Contact Lists
+     */
 	public void setListType(Integer listType) {
 		this.listType = listType;
 	}
