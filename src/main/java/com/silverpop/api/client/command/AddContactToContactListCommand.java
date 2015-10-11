@@ -6,12 +6,11 @@ import java.util.List;
 import com.silverpop.api.client.ApiCommand;
 import com.silverpop.api.client.XmlApiProperties;
 import com.silverpop.api.client.command.elements.Column;
-import com.silverpop.api.client.result.AddContactToProgramResult;
 import com.silverpop.api.client.result.OnlySuccessElementResult;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
-@XmlApiProperties("AddContactToContactListCommand")
+@XmlApiProperties("AddContactToContactList")
 public class AddContactToContactListCommand implements ApiCommand {
 
     @XStreamAlias("CONTACT_LIST_ID")
